@@ -3,6 +3,7 @@ package dio.board;
 import java.sql.SQLException;
 
 import dio.board.persistence.migration.MigrationStrategy;
+import dio.board.ui.MainMenu;
 
 import static dio.board.persistence.config.ConnectionConfig.getConnection;
 
@@ -12,6 +13,7 @@ public class Main {
         try (var connection = getConnection()) {
             new MigrationStrategy(connection).executeMigration();
         }
+        new MainMenu().execute();
 
     }
 }
