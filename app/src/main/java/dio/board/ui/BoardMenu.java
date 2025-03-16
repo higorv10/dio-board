@@ -18,7 +18,7 @@ import static dio.board.persistence.config.ConnectionConfig.getConnection;
 @AllArgsConstructor
 public class BoardMenu {
 
-    private final Scanner scanner = new Scanner(System.in).useDelimiter("\n");
+    private final Scanner scanner = new Scanner(System.in).useDelimiter("\\s+");
 
     private final BoardEntity entity;
 
@@ -38,6 +38,7 @@ public class BoardMenu {
                 System.out.println("9 - Voltar para o menu anterior um card");
                 System.out.println("10 - Sair");
                 option = scanner.nextInt();
+                scanner.nextLine();
                 switch (option) {
                     case 1 -> createCard();
                     case 2 -> moveCardToNextColumn();
