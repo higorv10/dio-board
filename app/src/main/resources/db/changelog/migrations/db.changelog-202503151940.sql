@@ -1,4 +1,4 @@
--- liquibase formatted sql
+--liquibase formatted sql
 --changeset higor:202503151940
 --comment: boards table create
 
