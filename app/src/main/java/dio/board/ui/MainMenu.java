@@ -20,7 +20,7 @@ import static dio.board.persistence.entity.BoardColumnKindEnum.PENDING;
 
 public class MainMenu {
 
-    private final Scanner scanner = new Scanner(System.in).useDelimiter("\n");
+    private final Scanner scanner = new Scanner(System.in).useDelimiter("\\s+");
 
     public void execute() throws SQLException {
         System.out.println("Bem vindo ao gerenciador de boards, escolha a opção desejada");
@@ -31,6 +31,7 @@ public class MainMenu {
             System.out.println("3 - Excluir um board");
             System.out.println("4 - Sair");
             option = scanner.nextInt();
+            scanner.nextLine();
             switch (option) {
                 case 1 -> createBoard();
                 case 2 -> selectBoard();
