@@ -84,15 +84,25 @@ cd dio-board
 2. Configure o banco de dados no arquivo `src/main/resources/db/changelog/db.changelog-master.yml`:
 
     - Altere as credenciais de conexão (usuário, senha, URL do banco) conforme necessário.
+  
+3. Após clonar o repositório, localize o arquivo Main.java no seu diretório local:
+   ```css
+   [CAMINHO_DO_REPOSITÓRIO]\src\main\java\dio\board\Main.java
+   ```
 
-3. Compile e execute o projeto:
+4. Caso esteja utilizando o VSCode, basta abrir o projeto, localizar o arquivo Main.java e clicar com o botão direito sobre ele para selecionar a opção Run. O terminal irá exibir as instruções para interagir com a aplicação.
+
+5. Se preferir rodar a aplicação no Maven via terminal, compile e execute o projeto com os seguintes comandos:
 
 ```bash
+
 mvn clean install
 mvn exec:java
 ```
 
-4- Siga as instruções no terminal para interagir com o sistema de boards.
+```pgsql
+- Siga as instruções no terminal para interagir com o sistema de boards.
+```
 
 ## 🛠️ Migrações do Banco de Dados
 O projeto utiliza Liquibase para gerenciar as migrações de banco de dados.
