@@ -78,7 +78,7 @@ src/
 ```bash
 
 git clone https://github.com/higorv10/dio-board.git
-cd dio-board
+cd dio-board\app
 ```
 
 2. Configure o banco de dados no arquivo `src/main/resources/db/changelog/db.changelog-master.yml`:
