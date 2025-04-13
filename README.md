@@ -85,7 +85,7 @@ cd dio-board
 
     - Altere as credenciais de conexão (usuário, senha, URL do banco) conforme necessário.
   
-3. Após clonar o repositório, localize o arquivo Main.java no seu diretório local:
+3. Após clonar o repositório, localize o arquivo `Main.java` no seu diretório local:
    ```css
    [CAMINHO_DO_REPOSITÓRIO]\src\main\java\dio\board\Main.java
    ```
