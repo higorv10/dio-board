@@ -75,11 +75,11 @@ src/
 ## ⚙️ Como Rodar
 1. Clone o repositório:
 
-```bash
+   ```bash
 
-git clone https://github.com/higorv10/dio-board.git
-cd dio-board\app
-```
+   git clone https://github.com/higorv10/dio-board.git
+   cd dio-board\app
+   ```
 
 2. Configure o banco de dados no arquivo `src/main/resources/db/changelog/db.changelog-master.yml`:
 
@@ -94,15 +94,15 @@ cd dio-board\app
 
 5. Se preferir rodar a aplicação no Maven via terminal, compile e execute o projeto com os seguintes comandos:
 
-```bash
+   ```bash
 
-mvn clean install
-mvn exec:java
-```
+   mvn clean install
+   mvn exec:java
+   ```
 
-```pgsql
-- Siga as instruções no terminal para interagir com o sistema de boards.
-```
+   ```pgsql
+   - Siga as instruções no terminal para interagir com o sistema de boards.
+   ```
 
 ## 🛠️ Migrações do Banco de Dados
 O projeto utiliza Liquibase para gerenciar as migrações de banco de dados.
